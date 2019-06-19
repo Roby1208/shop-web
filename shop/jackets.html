@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>clothes shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="shop.css" />
+    <script src="shop.js"></script>
+</head>
+<body class="center">
+        <ul>
+                <li><a href="shop.html">Home</a></li>
+                <li><a class="active" href="jackets.html">Jacket</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+              </ul>
+              <br>
+            <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                    <a href="sales.html">Sales %</a>
+                  </div>
+                </div>
+                
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; New Release / Sales</span>
+
+              <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+                  <div class="OneProduct">
+                      <a target="_blank" href="outfit1.jpg">
+                          <img src="outfit1.jpg">
+                      </a>
+                      <p style="font-size:20px;">
+                          <strong>OFF-White x Adidas outfit</strong>
+                      </p>
+                      <p>Price:1200$</p>
+                      <input type="button" value="buy" onclick="buy()">
+                  </div>
+                  <br>
+                  <div class="OneProduct">
+                        <a target="_blank" href="outfit2.jpg">
+                            <img class="image" src="outfit2.jpg">
+                        </a>
+                        <p style="font-size:20px;">
+                            <strong>Gucci outfit</strong>
+                        </p>
+                        <p>Price:1500$</p>
+                        <input type="button" value="buy" onclick="buy('buy.html','basket','Yezzy')">
+                    </div>
+                    <div class="OneProduct">
+                            <a target="_blank" href="outfit3.jpg">
+                                <img class="image" src="outfit3.jpg">
+                            </a>
+                            <p style="font-size:20px;">
+                                <strong>Louis vuitton</strong>
+                            </p>
+                            <p>Price:1800$</p>
+                            <input type="button" value="buy" onclick="buy()">
+                        </div>
+                        <div class="OneProduct">
+                                <a target="_blank" href="outfit4.jpg">
+                                    <img class="image" src="outfit4.jpg">
+                                </a>
+                                <p style="font-size:20px;">
+                                    <strong>OFF-White x Yezzy</strong>
+                                </p>
+                                <p>Price:999$</p>
+                                <input type="button" value="buy" onclick="buy()">
+                            </div>
+                </div>
+     
+</body>
+</html>
