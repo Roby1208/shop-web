@@ -33,7 +33,7 @@
                           <strong>Nike Vapormax Flyknit3</strong>
                       </p>
                       <p>Price:210$</p>
-                      <input type="button" value="buy" onclick="buy1()">
+                      <input type="button" value="buy" onclick="add('Vapormax')">
                   </div>
                   <br>
                   <div class="OneProduct">
@@ -41,10 +41,10 @@
                             <img class="image" src="shoes2.jpg">
                         </a>
                         <p style="font-size:20px;">
-                            <strong>Yezzy</strong>
+                            <strong id="shoe">Yezzy</strong>
                         </p>
                         <p>Price:550$</p>
-                        <input type="button" value="buy" onclick="buy('buy.html','basket','Yezzy')">
+                        <input type="button" value="buy" onclick="add('Yezzy')">
                     </div>
                     <div class="OneProduct">
                             <a target="_blank" href="shoes3.jpg">
@@ -54,7 +54,7 @@
                                 <strong>Adidas Ultra BOOST</strong>
                             </p>
                             <p>Price:160$</p>
-                            <input type="button" value="buy" onclick="buy3()">
+                            <input type="button" value="buy" onclick="add('Ultra Boost')">
                         </div>
                         <div class="OneProduct">
                                 <a target="_blank" href="shoes4.jpg">
@@ -64,7 +64,7 @@
                                     <strong>OFF-White Nike air force one</strong>
                                 </p>
                                 <p>Price:700$</p>
-                                <input type="button" value="buy" onclick="buy1">
+                                <input type="button" value="buy" onclick="add('OFF-White Nike air force one')">
                             </div>
                             <div class="OneProduct">
                                     <a target="_blank" href="shoes5.jpg">
@@ -74,9 +74,36 @@
                                         <strong>Gucci</strong>
                                     </p>
                                     <p>Price:800$</p>
-                                    <input type="button" value="buy" onclick="buy1">
+                                    <input type="button" value="buy" onclick="add('Gucci')">
                                 </div>
-                </div>
-     
+                
+     <hr>
+     <div class="container">
+        <label>First Name</label>
+        <input type="text" name="firstname" id="Firstname" placeholder="Your name..">
+    
+        <label>Last Name</label>
+        <input type="text" name="lastname" id="Lastname" placeholder="Your last name..">
+
+        <label>Address</label>
+        <input type="text" name="address" id="Address" placeholder="where shall we deliver your fashion">
+    
+        <label>Country</label>
+        <select id="Country" name="country">
+          <option value="Germany">Germany</option>
+          <option value="Luxemburg">Luxemburg</option>
+          <option value="France">France</option>
+        </select>
+    
+        <label>Extra Suggestion</label>
+        <textarea  name="Suggestion" id="Extra" placeholder="Write something.." style="height:200px"></textarea>
+        
+        <label>Basket</label>
+        <textarea name="Basket" id="Basket" style="height:200px"></textarea>
+    
+    
+        <input type="button" value="buy" onclick="buy()">
+    </div>
+</div>
 </body>
 </html>
